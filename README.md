@@ -1,6 +1,4 @@
----
-title: Running on tiger
----
+#  Running Jupyter Notebook in batch mode on tigercpu 
 
 -   Build the environment on tigercpu:
 
