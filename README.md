@@ -19,8 +19,7 @@
 
     but I had to comment out 2 cells because they were downloading data
     from the internet but the compute nodes don\'t have access to the
-    internet. If you search for the string you will find them in the
-    notebook:
+    internet:
 
     ``` {.python}
     # %matplotlib inline
@@ -32,7 +31,9 @@
     ``` {.python}
     # imp_fl.plot_basemap_eai_exposure(buffer=50000.0); # average annual impact at each exposure
     ```
-
+	I have uploaded a modified version of the notebook called
+	`1_main_climada_modified.ipynb`
+	
 -   Create a slurm script. This is an example for running for 10 min:
 
     ``` {.bash org-language="sh"}
@@ -44,7 +45,7 @@
     module load anaconda3
     conda activate climada_env
 
-    jupyter nbconvert --to notebook --execute 1_main_climada.ipynb
+    jupyter nbconvert --to notebook --execute 1_main_climada_modified.ipynb
     ```
 
     I called this script `slurm.sh`, you can call it whatever you want.
